@@ -1,4 +1,5 @@
 D:
 cd GIT\batch
-git reset -hard
+git reset --hard
 echo "D:\GIT\batch - lokalizacja przywrocona do pierwotnego stanu"
+pause
