@@ -3,7 +3,7 @@ title Wylacz PC
 
 echo Podaj czas do wylaczenia PC [min]
 set /p czas=czas:
-set /A czas = %czas% * 10 
+set /A czas = %czas% * 60 
 
 shutdown /s /t %czas% 
 
