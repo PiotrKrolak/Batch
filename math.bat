@@ -1,18 +1,15 @@
 @echo off
+title KALKULATOR
 
-title math.bat
 echo ==================================
 echo ============KALKULATOR============
 echo ==================================
 
-echo Podaj pierwsza liczbe
-set /p liczba_1=liczba_1:
+:licz
 
-echo Podaj druga liczbe
-set /p liczba_2=liczba_2:
-
-set /a wynik=%liczba_1% + %liczba_2%
-
+set /p rownanie=Podaj rownanie:
+set /a wynik=%rownanie%
 echo %wynik%
-
 pause
+cls
+goto :licz
