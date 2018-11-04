@@ -1,14 +1,14 @@
-@echo off
+::@echo off
 
-set /p path=<D:\GIT\Batch\odczyt\test.txt
+set path=D:\GIT\Batch\odczyt\test.txt
 
-echo %path%
+set /p linia=<%path%
 
-if %path% == test1 echo %path%2
+echo %linia%
+
+if %linia% == test1 echo %linia%2 DONE
 
 :: odczytuje cały plik "test.txt" na raz
-:D
-cd GIT\Batch\odczyt\
-type test.txt
+type %path%
 
 pause
