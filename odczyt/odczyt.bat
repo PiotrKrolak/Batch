@@ -1,4 +1,5 @@
 ::@echo off
+title odczyt
 
 set path=D:\GIT\Batch\odczyt\test.txt
 

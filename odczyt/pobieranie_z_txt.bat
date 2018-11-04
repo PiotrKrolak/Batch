@@ -5,10 +5,8 @@ title txt
 D:
 set path = GIT\Batch\txt
 
-cd %path%
-
 ::odczytaj tekst z pliku
 
-set /p test =<test.txt
+set /p test =<%path%
 echo %test%
 pause
