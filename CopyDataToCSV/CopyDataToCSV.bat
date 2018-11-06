@@ -9,7 +9,6 @@ if not exist %csv% call :create
 cd %source%
 copy *.txt %csv%
 
-pause
 exit
 
 :create
