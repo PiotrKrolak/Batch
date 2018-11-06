@@ -1,7 +1,7 @@
 @echo off
-title znajdz slowo w pliku
+title find 
 
-::dziala w cmd...dlaczego nie dziala w .bat? ;/
+::szukanie stringa w pliku
 find "test" test.txt
 
 pause

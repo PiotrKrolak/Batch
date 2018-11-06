@@ -1,5 +1,5 @@
 ::@echo off
-title odczyt
+title odczyt bla
 
 
 :: ustawienie zmiennych
@@ -19,8 +19,11 @@ if %linia% == test1 echo %linia%2 DONE
 type %path%
 
 cd
-::wypisanie 
+echo "%string%" %plik%
+
+::szukanie stringa w pliku
 ::dziala w cmd...dlaczego nie dziala w .bat? ;/
-::find  %string% %plik%
+::find "%string%" %plik%
+find "test" test.txt
 
 pause
