@@ -1,10 +1,22 @@
 @echo off
+title pull&revert
 
-D:
-cd GIT\batch
+::variables
+set path = D:\GIT
+set repo = 
 
+if not exist %path% call :clone
+
+cd %path%
+call :pull&revert
+
+exit
+
+::funkcyje
+::::::::::::::::::::::::::::::::
+:pull&revert
 git pull
 git reset --hard
 
-echo "D:\GIT\batch - lokalizacja przywrocona do pierwotnego stanu"
-pause
+:clone
+git clone %repo%
